@@ -1,18 +1,17 @@
 class MusicLibrary
   def initialize
-    # ...
+    @library = []
   end
 
-  def add(track) # track is an instance of Track
-    # Track gets added to the library
-    # Returns nothing
+  def add(track) 
+    @library << track
   end
 
   def all
-    return []
+    return @library
   end
 
-  def search_by_title(keyword) # keyword is a string
-    # Returns a list of tracks with titles that include the keyword
+  def search_by_title(keyword) 
+    @library.select { |el| el.title.upcase.include?(keyword.upcase)}
   end
 end
