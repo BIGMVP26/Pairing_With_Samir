@@ -1,3 +1,5 @@
+require "music_library"
+require "track"
 RSpec.describe "Music Library Integration" do
   it "gets all tracks" do
     library = MusicLibrary.new

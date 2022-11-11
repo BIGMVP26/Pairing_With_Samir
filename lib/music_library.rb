@@ -9,7 +9,7 @@ class MusicLibrary
   end
 
   def all
-    # Returns a list of track objects
+    return []
   end
 
   def search_by_title(keyword) # keyword is a string
