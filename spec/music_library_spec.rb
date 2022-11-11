@@ -11,7 +11,7 @@ RSpec.describe MusicLibrary do
     library.add(track_1)
     library.add(track_2)
     expect(library.all).to eq [track_1, track_2]
-end
+   end
 
 it "searches by title" do
     library = MusicLibrary.new
